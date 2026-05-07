@@ -9,6 +9,7 @@ wheels/
 /pdf/
 /paper/
 /
+*/*.pdf
 
 # Virtual environments
 .venv
