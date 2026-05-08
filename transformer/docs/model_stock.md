@@ -112,14 +112,14 @@ w_stock = α · w₀ + (1-α) · (average of fine-tuned weights)
 ### 3.4 算法流程
 
 **输入**：
-- 预训练权重 w₀
-- N 个微调权重 {w₁, ..., w_N}（N 可以很小，如 2）
+- 预训练权重 w_0
+- N 个微调权重 {w_1, ..., w_N}（N 可以很小，如 2）
 
 **步骤**：
 1. 计算微调权重之间的平均角度 θ
 2. 计算系数 α = cos(θ) / (1 + cos(θ))
 3. 计算微调权重的平均值 w_avg = (1/N) Σ w_i
-4. 输出 Model Stock 权重：w_stock = α · w₀ + (1-α) · w_avg
+4. 输出 Model Stock 权重：w_stock = α · w_0 + (1-α) · w_avg
 
 ---
 
